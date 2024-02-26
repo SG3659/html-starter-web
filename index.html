@@ -39,31 +39,31 @@
 
   <script>
     const images = [
-    { "name":"Dr. sahil gupta","image": "a/images7.jpeg"},
-     { "name":"Dr. sahil gupta","image": "a/images8.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images9.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images10.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images7.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images8.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images9.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images10.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images7.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images8.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images9.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images10.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images7.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images8.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images9.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images10.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images7.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images8.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images9.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images10.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images7.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images8.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images9.jpeg"},
-     {"name":"Dr. sahil gupta","image": "a/images10.jpeg"},
-     { "name":"Dr. sahil gupta","image": "a/images7.jpeg"},
+    { "name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images7.jpeg"},
+     { "name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images8.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images9.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images10.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images7.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images8.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images9.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images10.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images7.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images8.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images9.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images10.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images7.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images8.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images9.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images10.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images7.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images8.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images9.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images10.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images7.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images8.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images9.jpeg"},
+     {"name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images10.jpeg"},
+     { "name":"Dr. sahil gupta","name2":"Dental Care","image": "a/images7.jpeg"},
     ];
 
     const imageContainer = document.getElementById('gallery');
@@ -80,9 +80,12 @@
 
         const name = document.createElement('p');
         name.textContent = item.name || 'Unknown';
+         const name2 = document.createElement('p');
+        name2.textContent = item.name2 || 'Unknown';
 
         userDiv.appendChild(img);
         userDiv.appendChild(name);
+        userDiv.appendChild(name2);
         imageContainer.appendChild(userDiv);
       });
     }
